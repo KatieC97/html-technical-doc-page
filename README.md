@@ -23,7 +23,7 @@ A fully responsive and accessible HTML documentation page built with **Tailwind 
 
 ## Live Demo
 
-> Add your GitHub Pages / Netlify / Vercel link here once deployed.
+[View the live site here](https://katiec97.github.io/html-technical-doc-page/)
 
 ## Screenshots
 
