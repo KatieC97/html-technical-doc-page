@@ -36,11 +36,16 @@ A fully responsive and accessible HTML documentation page built with **Tailwind 
 
 ### Mobile View
 
-![Mobile Screenshot 1](./screenshots/html-tech-web-screenshot-two.png)
+![Mobile Screenshot 1](./screenshots/html-tech-mob-screenshot-one.png)
+![Mobile Screenshot 2](./screenshots/html-tech-mob-screenshot-two.png)
+![Mobile Screenshot 3](./screenshots/html-tech-mob-screenshot-three.png)
+![Mobile Screenshot 4](./screenshots/html-tech-mob-screenshot-four.png)
+![Mobile Screenshot 5](./screenshots/html-tech-mob-screenshot-five.png)
 
 ### Dark Mode
 
 ![Dark Mode Screenshot 1](./screenshots/html-tech-web-dark-mode-screenshot-one.png)
+![Dark Mode Screenshot 2](./screenshots/html-tech-mob-dark-mode-screenshot-one.png)
 
 ## Author
 
