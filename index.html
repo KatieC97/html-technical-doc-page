@@ -31,19 +31,6 @@
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-
-    <style>
-      html {
-        transition: background-color 0.3s ease, color 0.3s ease;
-      }
-      body {
-        font-family: "DM Sans", sans-serif;
-      }
-      .active {
-        background-color: #ffffff22;
-        font-weight: bold;
-      }
-    </style>
   </head>
 
   <body
@@ -61,7 +48,7 @@
       <nav
         class="w-full md:w-64 bg-[#8f277a] dark:bg-[#f4d6e5] text-white dark:text-[#1a1a1a] px-5 py-6 shadow-lg"
       >
-        <div class="flex justify-between items-center mb-4 w-full">
+        <div class="flex justify-between items-center mb-4">
           <div class="text-xl font-extrabold tracking-wide whitespace-nowrap">
             dev.katie<span class="text-white">()</span>
           </div>
@@ -73,12 +60,12 @@
           </button>
         </div>
 
-        <div id="navLinks" class="hidden md:block space-y-2">
+        <div id="navLinks" class="md:block hidden space-y-2">
           <h1 class="text-2xl font-bold mb-2">HTML Basics</h1>
           <!-- Dark Mode Toggle Button-->
           <button
             id="toggleDark"
-            class="text-sm px-3 py-1 border rounded w-full text-left text-white bg-[#8f277a] hover:bg-[#6c1d5e] dark:text-[#1a1a1a] dark:bg-pink-200 dark:hover:bg-pink-300 transition"
+            class="text-sm px-3 py-2 w-full text-left rounded bg-white/10 hover:bg-white/20 dark:bg-[#e5b8d2] dark:hover:bg-[#ebbfd7] text-white dark:text-[#1a1a1a] transition"
           >
             Dark Mode
           </button>
