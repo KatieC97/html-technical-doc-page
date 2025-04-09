@@ -40,11 +40,11 @@
     </a>
 
     <div class="flex flex-col md:flex-row min-h-screen">
-      <!-- Sidebar -->
+      <!-- Navigation -->
       <nav
-        class="w-full md:w-64 sticky top-0 z-40 bg-[#8f277a] dark:bg-[#f4d6e5] text-white dark:text-[#1a1a1a] px-5 py-6 shadow-lg"
+        class="w-full bg-[#8f277a] dark:bg-[#f4d6e5] text-white dark:text-[#1a1a1a] px-4 py-4 shadow-md z-50"
       >
-        <div class="flex justify-between items-center mb-4">
+        <div class="max-w-screen-xl mx-auto flex justify-between items-center">
           <div class="text-xl font-extrabold tracking-wide whitespace-nowrap">
             dev.katie<span class="text-white">()</span>
           </div>
@@ -55,7 +55,8 @@
             &#9776;
           </button>
         </div>
-        <div id="navLinks" class="md:block hidden space-y-2">
+
+        <div id="navLinks" class="md:block hidden mt-4 md:mt-6 space-y-2">
           <h1 class="text-2xl font-bold mb-2">HTML Basics</h1>
           <a
             href="#Intro"
@@ -100,8 +101,8 @@
         id="main-doc"
         class="flex-1 px-4 py-6 sm:px-6 md:px-10 space-y-12 max-w-screen-lg mx-auto relative"
       >
-        <!-- Dark Toggle -->
-        <div class="flex justify-end md:justify-end mt-4 mb-2">
+        <!-- Main Header Tools (e.g. Dark Mode Toggle) -->
+        <div class="w-full px-4 py-2 flex justify-end max-w-screen-xl mx-auto">
           <button
             id="toggleDark"
             class="text-sm px-3 py-1 border rounded text-white bg-[#8f277a] hover:bg-[#6c1d5e] transition"
