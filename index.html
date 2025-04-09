@@ -5,37 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Basics – dev.katie()</title>
 
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         darkMode: "class",
       };
     </script>
+
+    <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="https://fav.farm/📝" />
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Prism.js for syntax highlighting -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-  </head>
 
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
   <body
     class="bg-[#fdfbff] text-[#2e2e2e] dark:bg-[#1e1e1e] dark:text-[#eaeaea] font-[DM Sans]"
   >
     <a
       href="#main-doc"
       class="sr-only focus:not-sr-only absolute left-2 top-2 bg-pink-700 text-white px-3 py-1 rounded z-50"
-      >Skip to Content</a
     >
+      Skip to Content
+    </a>
 
     <div class="flex flex-col md:flex-row min-h-screen">
+      <!-- Sidebar -->
       <nav
-        class="w-full md:w-64 bg-[#8f277a] dark:bg-[#f4d6e5] text-white dark:text-[#1a1a1a] px-5 py-6 shadow-lg"
+        class="w-full md:w-64 sticky top-0 z-40 bg-[#8f277a] dark:bg-[#f4d6e5] text-white dark:text-[#1a1a1a] px-5 py-6 shadow-lg"
       >
         <div class="flex justify-between items-center mb-4">
           <div class="text-xl font-extrabold tracking-wide whitespace-nowrap">
@@ -48,10 +55,7 @@
             &#9776;
           </button>
         </div>
-        <div
-          id="navLinks"
-          class="hidden md:block flex-col space-y-2 md:space-y-2"
-        >
+        <div id="navLinks" class="md:block hidden space-y-2">
           <h1 class="text-2xl font-bold mb-2">HTML Basics</h1>
           <a
             href="#Intro"
@@ -91,11 +95,13 @@
         </div>
       </nav>
 
+      <!-- Main Content -->
       <main
         id="main-doc"
         class="flex-1 px-4 py-6 sm:px-6 md:px-10 space-y-12 max-w-screen-lg mx-auto relative"
       >
-        <div class="flex justify-end md:justify-end">
+        <!-- Dark Toggle -->
+        <div class="flex justify-end md:justify-end mt-4 mb-2">
           <button
             id="toggleDark"
             class="text-sm px-3 py-1 border rounded text-white bg-[#8f277a] hover:bg-[#6c1d5e] transition"
@@ -104,6 +110,7 @@
           </button>
         </div>
 
+        <!-- Intro -->
         <section id="Intro">
           <h2 class="text-2xl font-bold mb-3">Intro</h2>
           <p>
@@ -123,6 +130,7 @@
           </p>
         </section>
 
+        <!-- HTML -->
         <section id="HTML">
           <h2 class="text-2xl font-bold mb-3">HTML</h2>
           <p>The anatomy of a HTML element is:</p>
@@ -153,6 +161,7 @@
           </ul>
         </section>
 
+        <!-- Head VS Body -->
         <section id="Head_VS_Body">
           <h2 class="text-2xl font-bold mb-3">Head VS Body</h2>
           <p>
@@ -164,8 +173,7 @@
             to include on the HTML page, that isn't the content the page will
             show to viewers. This includes keywords and a page description that
             would appear in search results, CSS to style content, character set
-            declarations, and more. You will learn more about this in the next
-            article of the series.
+            declarations, and more.
           </p>
           <p>
             <strong>Body</strong> - contains all the content that displays on
@@ -174,19 +182,18 @@
           </p>
         </section>
 
+        <!-- Elements -->
         <section id="Elements">
           <h2 class="text-2xl font-bold mb-3">Elements</h2>
           <ul class="list-disc pl-5">
             <li>
               There are six heading elements 'h1', 'h2', 'h3', 'h4', 'h5', 'h6':
-              Each element represents a different level of content in the
-              document; 'h1' represents the main heading, 'h2' represents
-              subheadings, 'h3' represents sub-subheadings, and so on.
+              Each represents a different level of content in the document.
             </li>
             <li>The 'p' tag is used for paragraphs</li>
             <li>
-              Lists are everywhere on the web, too, and we've got two different
-              types to worry about:
+              Lists are everywhere on the web, and we've got two different
+              types:
             </li>
           </ul>
           <p><strong>Unordered:</strong></p>
@@ -195,44 +202,38 @@
 &lt;li&gt;Two&lt;/li&gt;
 &lt;li&gt;Three&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-
           <p><strong>Ordered:</strong></p>
           <pre><code class="language-html">&lt;ol&gt;
 &lt;li&gt;Uno&lt;/li&gt;
 &lt;li&gt;Dos&lt;/li&gt;
 &lt;li&gt;Tres&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
-
           <p>
-            The 'a' anchor element with its href attribute creates a hyperlink
-            to web pages, files, email addresses, locations in the same page, or
-            anything else a URL can address.
+            The 'a' anchor element with its href attribute creates a hyperlink:
           </p>
           <pre><code class="language-html">&lt;a href="insert link here" target="_blank"&gt;Link&lt;/a&gt;</code></pre>
         </section>
 
+        <!-- Media -->
         <section id="Media">
           <h2 class="text-2xl font-bold mb-3">Media</h2>
-          <p>
-            The following elements are used to add media such as images, videos
-            and audio to a HTML page:
-          </p>
           <ul class="list-disc pl-5">
             <li>
-              The 'img' tag is used to add images:
+              The 'img' tag:
               <pre><code class="language-html">&lt;img src="link" alt="description"&gt;</code></pre>
             </li>
             <li>
-              The 'video' tag embeds a media player:
+              The 'video' tag:
               <pre><code class="language-html">&lt;video controls&gt;&lt;source src="tutorial.mp4" type="video/mpeg"&gt;&lt;/video&gt;</code></pre>
             </li>
             <li>
-              The 'audio' tag is used to embed sound:
+              The 'audio' tag:
               <pre><code class="language-html">&lt;audio controls src="insert link to audio"&gt;&lt;/audio&gt;</code></pre>
             </li>
           </ul>
         </section>
 
+        <!-- Style Text -->
         <section id="Style_Text">
           <h2 class="text-2xl font-bold mb-3">HTML to Style Text</h2>
           <p><code class="language-html">&lt;em&gt;Italic&lt;/em&gt;</code></p>
@@ -249,6 +250,7 @@
           </p>
         </section>
 
+        <!-- Reference -->
         <section id="Reference">
           <h2 class="text-2xl font-bold mb-3">Reference</h2>
           <ul class="list-disc pl-5">
@@ -264,6 +266,7 @@
           </ul>
         </section>
 
+        <!-- Footer -->
         <footer
           class="border-t pt-6 mt-12 text-sm text-center text-gray-500 dark:text-pink-200"
         >
@@ -274,6 +277,7 @@
           – 2025
         </footer>
 
+        <!-- Scroll to Top -->
         <button
           id="scrollTop"
           class="fixed bottom-4 right-4 hidden bg-[#a9338f] text-white px-4 py-2 rounded-full shadow-lg hover:bg-[#8f277a] z-50"
@@ -283,6 +287,7 @@
       </main>
     </div>
 
+    <!-- Scripts -->
     <script>
       const sections = document.querySelectorAll("main section");
       const navLinks = document.querySelectorAll(".nav-link");
@@ -306,8 +311,7 @@
       });
 
       document.getElementById("menuToggle").addEventListener("click", () => {
-        const nav = document.getElementById("navLinks");
-        nav.classList.toggle("hidden");
+        document.getElementById("navLinks").classList.toggle("hidden");
       });
 
       const scrollBtn = document.getElementById("scrollTop");
