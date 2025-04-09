@@ -50,4 +50,4 @@ A fully responsive and accessible HTML documentation page built with **Tailwind 
 ## Author
 
 Designed & built by **Katie Cox** — 2025
-[GitHub Profile](https://github.com/your-username) _(update this with your GitHub)_
+[GitHub Profile](https://github.com/KatieC97)
