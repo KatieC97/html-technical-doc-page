@@ -38,287 +38,292 @@
   <body
     class="bg-[#fdfbff] text-[#2e2e2e] dark:bg-[#1e1e1e] dark:text-[#eaeaea]"
   >
-    <a
-      href="#main-doc"
-      class="sr-only focus:not-sr-only absolute left-2 top-2 bg-pink-700 text-white px-3 py-1 rounded z-50"
-      >Skip to Content</a
-    >
-
-    <div class="flex flex-col md:flex-row min-h-screen">
-      <!-- Sidebar -->
-      <nav
-        class="w-full md:w-64 flex-shrink-0 md:h-screen bg-[#8f277a] dark:bg-[#f4d6e5] text-white dark:text-[#1a1a1a] px-5 py-6 shadow-lg"
+    <div class="flex flex-col min-h-screen w-full">
+      <a
+        href="#main-doc"
+        class="sr-only focus:not-sr-only absolute left-2 top-2 bg-pink-700 text-white px-3 py-1 rounded z-50"
+        >Skip to Content</a
       >
-        <div class="flex justify-between items-center mb-4">
-          <div class="text-xl font-extrabold tracking-wide whitespace-nowrap">
-            dev.katie<span class="text-white">()</span>
+
+      <div class="flex flex-col md:flex-row min-h-screen">
+        <!-- Sidebar -->
+        <nav
+          class="w-full md:w-64 flex-shrink-0 md:h-screen bg-[#8f277a] dark:bg-[#f4d6e5] text-white dark:text-[#1a1a1a] px-5 py-6 shadow-lg"
+        >
+          <div class="flex justify-between items-center mb-4">
+            <div class="text-xl font-extrabold tracking-wide whitespace-nowrap">
+              dev.katie<span class="text-white">()</span>
+            </div>
+            <button
+              id="menuToggle"
+              class="md:hidden text-white text-2xl focus:outline-none"
+            >
+              &#9776;
+            </button>
           </div>
-          <button
-            id="menuToggle"
-            class="md:hidden text-white text-2xl focus:outline-none"
-          >
-            &#9776;
-          </button>
-        </div>
 
-        <div id="navLinks" class="md:block hidden space-y-2">
-          <h1 class="text-2xl font-bold mb-2">HTML Basics</h1>
-          <button
-            id="toggleDark"
-            class="text-sm px-3 py-2 w-full text-left rounded bg-white/10 hover:bg-white/20 dark:bg-[#e5b8d2] dark:hover:bg-[#ebbfd7] text-white dark:text-[#1a1a1a] transition"
-          >
-            Dark Mode
-          </button>
-          <a
-            href="#Intro"
-            class="block nav-link px-3 py-2 rounded hover:bg-white/10"
-            >Intro</a
-          >
-          <a
-            href="#HTML"
-            class="block nav-link px-3 py-2 rounded hover:bg-white/10"
-            >HTML</a
-          >
-          <a
-            href="#Head_VS_Body"
-            class="block nav-link px-3 py-2 rounded hover:bg-white/10"
-            >Head VS Body</a
-          >
-          <a
-            href="#Elements"
-            class="block nav-link px-3 py-2 rounded hover:bg-white/10"
-            >Elements</a
-          >
-          <a
-            href="#Media"
-            class="block nav-link px-3 py-2 rounded hover:bg-white/10"
-            >Media</a
-          >
-          <a
-            href="#Style_Text"
-            class="block nav-link px-3 py-2 rounded hover:bg-white/10"
-            >HTML to Style Text</a
-          >
-          <a
-            href="#Reference"
-            class="block nav-link px-3 py-2 rounded hover:bg-white/10"
-            >Reference</a
-          >
-        </div>
-      </nav>
+          <div id="navLinks" class="md:block hidden space-y-2">
+            <h1 class="text-2xl font-bold mb-2">HTML Basics</h1>
+            <button
+              id="toggleDark"
+              class="text-sm px-3 py-2 w-full text-left rounded bg-white/10 hover:bg-white/20 dark:bg-[#e5b8d2] dark:hover:bg-[#ebbfd7] text-white dark:text-[#1a1a1a] transition"
+            >
+              Dark Mode
+            </button>
+            <a
+              href="#Intro"
+              class="block nav-link px-3 py-2 rounded hover:bg-white/10"
+              >Intro</a
+            >
+            <a
+              href="#HTML"
+              class="block nav-link px-3 py-2 rounded hover:bg-white/10"
+              >HTML</a
+            >
+            <a
+              href="#Head_VS_Body"
+              class="block nav-link px-3 py-2 rounded hover:bg-white/10"
+              >Head VS Body</a
+            >
+            <a
+              href="#Elements"
+              class="block nav-link px-3 py-2 rounded hover:bg-white/10"
+              >Elements</a
+            >
+            <a
+              href="#Media"
+              class="block nav-link px-3 py-2 rounded hover:bg-white/10"
+              >Media</a
+            >
+            <a
+              href="#Style_Text"
+              class="block nav-link px-3 py-2 rounded hover:bg-white/10"
+              >HTML to Style Text</a
+            >
+            <a
+              href="#Reference"
+              class="block nav-link px-3 py-2 rounded hover:bg-white/10"
+              >Reference</a
+            >
+          </div>
+        </nav>
 
-      <!-- Main -->
-      <main
-        id="main-doc"
-        class="flex-1 px-4 py-6 pt-10 sm:px-6 md:px-10 space-y-12 max-w-screen-lg mx-auto relative"
-      >
-        <!-- Intro -->
-        <section id="Intro">
-          <h2 class="text-2xl font-bold mb-3">Intro</h2>
-          <p>
-            HTML (Hypertext Markup Language) is used to specify whether your web
-            content should be recognized as a paragraph, list, heading, link,
-            image, multimedia player, form, or one of many other available
-            elements or even a new element that you define.
-          </p>
-          <p>
-            HTML is a markup language that tells web browsers how to structure
-            the web pages you visit. It can be as complicated or as simple as
-            the web developer wants it to be. HTML consists of a series of
-            elements, which you use to enclose, wrap, or mark up different parts
-            of content to make it appear or act in a certain way. The enclosing
-            tags can make content into a hyperlink to connect to another page,
-            italicize words, and so on.
-          </p>
-        </section>
+        <!-- Main -->
+        <main
+          id="main-doc"
+          class="flex-1 px-4 py-6 pt-10 sm:px-6 md:px-10 space-y-12 max-w-screen-lg mx-auto relative"
+        >
+          <!-- Intro -->
+          <section id="Intro">
+            <h2 class="text-2xl font-bold mb-3">Intro</h2>
+            <p>
+              HTML (Hypertext Markup Language) is used to specify whether your
+              web content should be recognized as a paragraph, list, heading,
+              link, image, multimedia player, form, or one of many other
+              available elements or even a new element that you define.
+            </p>
+            <p>
+              HTML is a markup language that tells web browsers how to structure
+              the web pages you visit. It can be as complicated or as simple as
+              the web developer wants it to be. HTML consists of a series of
+              elements, which you use to enclose, wrap, or mark up different
+              parts of content to make it appear or act in a certain way. The
+              enclosing tags can make content into a hyperlink to connect to
+              another page, italicize words, and so on.
+            </p>
+          </section>
 
-        <!-- HTML -->
-        <section id="HTML">
-          <h2 class="text-2xl font-bold mb-3">HTML</h2>
-          <p>The anatomy of a HTML element is:</p>
-          <ul class="list-disc pl-5">
-            <li>
-              The opening tag: This consists of the name of the element, wrapped
-              in opening and closing angle brackets.
-            </li>
-            <li>The content: This is the content of the element.</li>
-            <li>
-              The closing tag: Same as opening tag, but with a forward slash
-              before the element name. This marks where the element ends.
-            </li>
-          </ul>
-          <p>Here are some elements that must be included:</p>
-          <ul class="list-disc pl-5">
-            <li>
-              The '!DOCTYPE html' element must be included at the top of the
-              code.
-            </li>
-            <li>
-              The 'html' element wraps all the content on the page. It is
-              sometimes known as the root element.
-            </li>
-          </ul>
-        </section>
+          <!-- HTML -->
+          <section id="HTML">
+            <h2 class="text-2xl font-bold mb-3">HTML</h2>
+            <p>The anatomy of a HTML element is:</p>
+            <ul class="list-disc pl-5">
+              <li>
+                The opening tag: This consists of the name of the element,
+                wrapped in opening and closing angle brackets.
+              </li>
+              <li>The content: This is the content of the element.</li>
+              <li>
+                The closing tag: Same as opening tag, but with a forward slash
+                before the element name. This marks where the element ends.
+              </li>
+            </ul>
+            <p>Here are some elements that must be included:</p>
+            <ul class="list-disc pl-5">
+              <li>
+                The '!DOCTYPE html' element must be included at the top of the
+                code.
+              </li>
+              <li>
+                The 'html' element wraps all the content on the page. It is
+                sometimes known as the root element.
+              </li>
+            </ul>
+          </section>
 
-        <!-- Head vs Body -->
-        <section id="Head_VS_Body">
-          <h2 class="text-2xl font-bold mb-3">Head VS Body</h2>
-          <p>
-            There are two main elements in a HTML document - the 'head' and the
-            'body'.
-          </p>
-          <p>
-            <strong>Head</strong> - acts as a container for everything you want
-            to include on the HTML page, that isn't the content the page will
-            show to viewers.
-          </p>
-          <p>
-            <strong>Body</strong> - contains all the content that displays on
-            the page, including text, images, videos, games, playable audio
-            tracks, or whatever else.
-          </p>
-        </section>
+          <!-- Head vs Body -->
+          <section id="Head_VS_Body">
+            <h2 class="text-2xl font-bold mb-3">Head VS Body</h2>
+            <p>
+              There are two main elements in a HTML document - the 'head' and
+              the 'body'.
+            </p>
+            <p>
+              <strong>Head</strong> - acts as a container for everything you
+              want to include on the HTML page, that isn't the content the page
+              will show to viewers.
+            </p>
+            <p>
+              <strong>Body</strong> - contains all the content that displays on
+              the page, including text, images, videos, games, playable audio
+              tracks, or whatever else.
+            </p>
+          </section>
 
-        <!-- Elements -->
-        <section id="Elements">
-          <h2 class="text-2xl font-bold mb-3">Elements</h2>
-          <ul class="list-disc pl-5">
-            <li>
-              There are six heading elements 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'
-            </li>
-            <li>The 'p' tag is used for paragraphs</li>
-            <li>
-              Lists are everywhere on the web, too, and we've got two different
-              types to worry about:
-            </li>
-          </ul>
-          <p><strong>Unordered:</strong></p>
-          <pre><code class="language-html">&lt;ul&gt;
+          <!-- Elements -->
+          <section id="Elements">
+            <h2 class="text-2xl font-bold mb-3">Elements</h2>
+            <ul class="list-disc pl-5">
+              <li>
+                There are six heading elements 'h1', 'h2', 'h3', 'h4', 'h5',
+                'h6'
+              </li>
+              <li>The 'p' tag is used for paragraphs</li>
+              <li>
+                Lists are everywhere on the web, too, and we've got two
+                different types to worry about:
+              </li>
+            </ul>
+            <p><strong>Unordered:</strong></p>
+            <pre><code class="language-html">&lt;ul&gt;
 &lt;li&gt;One&lt;/li&gt;
 &lt;li&gt;Two&lt;/li&gt;
 &lt;li&gt;Three&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
-          <p><strong>Ordered:</strong></p>
-          <pre><code class="language-html">&lt;ol&gt;
+            <p><strong>Ordered:</strong></p>
+            <pre><code class="language-html">&lt;ol&gt;
 &lt;li&gt;Uno&lt;/li&gt;
 &lt;li&gt;Dos&lt;/li&gt;
 &lt;li&gt;Tres&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
 
-          <p>
-            The 'a' anchor element creates a hyperlink to web pages, files, or
-            email addresses:
-          </p>
-          <pre><code class="language-html">&lt;a href="insert link here" target="_blank"&gt;Link&lt;/a&gt;</code></pre>
-        </section>
+            <p>
+              The 'a' anchor element creates a hyperlink to web pages, files, or
+              email addresses:
+            </p>
+            <pre><code class="language-html">&lt;a href="insert link here" target="_blank"&gt;Link&lt;/a&gt;</code></pre>
+          </section>
 
-        <!-- Media -->
-        <section id="Media">
-          <h2 class="text-2xl font-bold mb-3">Media</h2>
-          <p>
-            The following elements are used to add media such as images, videos
-            and audio to a HTML page:
-          </p>
-          <ul class="list-disc pl-5">
-            <li>The 'img' tag is used to add images:</li>
-            <pre><code class="language-html">&lt;img src="link" alt="description"&gt;</code></pre>
-            <li>The 'video' tag embeds a media player:</li>
-            <pre><code class="language-html">&lt;video controls&gt;&lt;source src="tutorial.mp4" type="video/mpeg"&gt;&lt;/video&gt;</code></pre>
-            <li>The 'audio' tag is used to embed sound:</li>
-            <pre><code class="language-html">&lt;audio controls src="insert link to audio"&gt;&lt;/audio&gt;</code></pre>
-          </ul>
-        </section>
+          <!-- Media -->
+          <section id="Media">
+            <h2 class="text-2xl font-bold mb-3">Media</h2>
+            <p>
+              The following elements are used to add media such as images,
+              videos and audio to a HTML page:
+            </p>
+            <ul class="list-disc pl-5">
+              <li>The 'img' tag is used to add images:</li>
+              <pre><code class="language-html">&lt;img src="link" alt="description"&gt;</code></pre>
+              <li>The 'video' tag embeds a media player:</li>
+              <pre><code class="language-html">&lt;video controls&gt;&lt;source src="tutorial.mp4" type="video/mpeg"&gt;&lt;/video&gt;</code></pre>
+              <li>The 'audio' tag is used to embed sound:</li>
+              <pre><code class="language-html">&lt;audio controls src="insert link to audio"&gt;&lt;/audio&gt;</code></pre>
+            </ul>
+          </section>
 
-        <!-- Style Text -->
-        <section id="Style_Text">
-          <h2 class="text-2xl font-bold mb-3">HTML to Style Text</h2>
-          <p><code class="language-html">&lt;em&gt;Italic&lt;/em&gt;</code></p>
-          <p>
-            <code class="language-html"
-              >&lt;strong&gt;Strong&lt;/strong&gt;</code
-            >
-          </p>
-          <p>
-            <code class="language-html"
-              >&lt;s&gt;Strike
-              through&lt;/s&gt;&lt;u&gt;Underline&lt;/u&gt;</code
-            >
-          </p>
-        </section>
+          <!-- Style Text -->
+          <section id="Style_Text">
+            <h2 class="text-2xl font-bold mb-3">HTML to Style Text</h2>
+            <p>
+              <code class="language-html">&lt;em&gt;Italic&lt;/em&gt;</code>
+            </p>
+            <p>
+              <code class="language-html"
+                >&lt;strong&gt;Strong&lt;/strong&gt;</code
+              >
+            </p>
+            <p>
+              <code class="language-html"
+                >&lt;s&gt;Strike
+                through&lt;/s&gt;&lt;u&gt;Underline&lt;/u&gt;</code
+              >
+            </p>
+          </section>
 
-        <!-- Reference -->
-        <section id="Reference">
-          <h2 class="text-2xl font-bold mb-3">Reference</h2>
-          <ul class="list-disc pl-5">
-            <li>
-              All the documentation in this page is taken from
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started"
-                target="_blank"
-                class="text-[#a9338f] underline dark:text-pink-300"
-                >MDN</a
-              >.
-            </li>
-          </ul>
-        </section>
+          <!-- Reference -->
+          <section id="Reference">
+            <h2 class="text-2xl font-bold mb-3">Reference</h2>
+            <ul class="list-disc pl-5">
+              <li>
+                All the documentation in this page is taken from
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started"
+                  target="_blank"
+                  class="text-[#a9338f] underline dark:text-pink-300"
+                  >MDN</a
+                >.
+              </li>
+            </ul>
+          </section>
 
-        <!-- Footer -->
-        <footer
-          class="border-t pt-6 mt-12 text-sm text-center text-gray-500 dark:text-pink-200"
-        >
-          Designed & built by
-          <span class="font-bold text-[#a9338f] dark:text-pink-300"
-            >Katie Cox</span
+          <!-- Footer -->
+          <footer
+            class="border-t pt-6 mt-12 text-sm text-center text-gray-500 dark:text-pink-200"
           >
-          – 2025
-        </footer>
+            Designed & built by
+            <span class="font-bold text-[#a9338f] dark:text-pink-300"
+              >Katie Cox</span
+            >
+            – 2025
+          </footer>
 
-        <!-- Scroll to Top -->
-        <button
-          id="scrollTop"
-          class="fixed bottom-4 right-4 hidden bg-[#a9338f] text-white px-4 py-2 rounded-full shadow-lg hover:bg-[#8f277a] z-50"
-        >
-          ↑ Top
-        </button>
-      </main>
+          <!-- Scroll to Top -->
+          <button
+            id="scrollTop"
+            class="fixed bottom-4 right-4 hidden bg-[#a9338f] text-white px-4 py-2 rounded-full shadow-lg hover:bg-[#8f277a] z-50"
+          >
+            ↑ Top
+          </button>
+        </main>
+      </div>
+
+      <!-- Scripts -->
+      <script>
+        const sections = document.querySelectorAll("main section");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        window.addEventListener("scroll", () => {
+          let current = "";
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 100;
+            if (pageYOffset >= sectionTop) current = section.getAttribute("id");
+          });
+          navLinks.forEach((link) => {
+            link.classList.remove("bg-white/10", "font-bold");
+            if (link.getAttribute("href").includes(current)) {
+              link.classList.add("bg-white/10", "font-bold");
+            }
+          });
+        });
+
+        document.getElementById("toggleDark").addEventListener("click", () => {
+          document.documentElement.classList.toggle("dark");
+        });
+
+        document.getElementById("menuToggle").addEventListener("click", () => {
+          const nav = document.getElementById("navLinks");
+          nav.classList.toggle("hidden");
+        });
+
+        const scrollBtn = document.getElementById("scrollTop");
+        window.addEventListener("scroll", () => {
+          scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+        });
+        scrollBtn.addEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      </script>
     </div>
-
-    <!-- Scripts -->
-    <script>
-      const sections = document.querySelectorAll("main section");
-      const navLinks = document.querySelectorAll(".nav-link");
-
-      window.addEventListener("scroll", () => {
-        let current = "";
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop - 100;
-          if (pageYOffset >= sectionTop) current = section.getAttribute("id");
-        });
-        navLinks.forEach((link) => {
-          link.classList.remove("bg-white/10", "font-bold");
-          if (link.getAttribute("href").includes(current)) {
-            link.classList.add("bg-white/10", "font-bold");
-          }
-        });
-      });
-
-      document.getElementById("toggleDark").addEventListener("click", () => {
-        document.documentElement.classList.toggle("dark");
-      });
-
-      document.getElementById("menuToggle").addEventListener("click", () => {
-        const nav = document.getElementById("navLinks");
-        nav.classList.toggle("hidden");
-      });
-
-      const scrollBtn = document.getElementById("scrollTop");
-      window.addEventListener("scroll", () => {
-        scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
-      });
-      scrollBtn.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-    </script>
   </body>
 </html>
