@@ -8,7 +8,7 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Tailwind Config for Dark Mode -->
+    <!-- Tailwind Config -->
     <script>
       tailwind.config = {
         darkMode: "class",
@@ -21,8 +21,10 @@
       rel="stylesheet"
     />
 
+    <!-- Favicon -->
     <link rel="icon" href="https://fav.farm/📝" />
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
 
     <!-- Prism.js -->
@@ -36,7 +38,6 @@
   <body
     class="bg-[#fdfbff] text-[#2e2e2e] dark:bg-[#1e1e1e] dark:text-[#eaeaea]"
   >
-    <!-- Skip Link -->
     <a
       href="#main-doc"
       class="sr-only focus:not-sr-only absolute left-2 top-2 bg-pink-700 text-white px-3 py-1 rounded z-50"
@@ -44,7 +45,7 @@
     >
 
     <div class="flex flex-col md:flex-row min-h-screen">
-      <!-- Sidebar/Navbar -->
+      <!-- Sidebar -->
       <nav
         class="w-full md:w-64 bg-[#8f277a] dark:bg-[#f4d6e5] text-white dark:text-[#1a1a1a] px-5 py-6 shadow-lg"
       >
@@ -62,7 +63,6 @@
 
         <div id="navLinks" class="md:block hidden space-y-2">
           <h1 class="text-2xl font-bold mb-2">HTML Basics</h1>
-          <!-- Dark Mode Toggle Button-->
           <button
             id="toggleDark"
             class="text-sm px-3 py-2 w-full text-left rounded bg-white/10 hover:bg-white/20 dark:bg-[#e5b8d2] dark:hover:bg-[#ebbfd7] text-white dark:text-[#1a1a1a] transition"
@@ -106,13 +106,14 @@
           >
         </div>
       </nav>
-      <!-- Main Content -->
+
+      <!-- Main -->
       <main
         id="main-doc"
         class="flex-1 px-4 py-6 pt-10 sm:px-6 md:px-10 space-y-12 max-w-screen-lg mx-auto relative"
       >
         <!-- Intro -->
-        <section id="Intro" class="mt-6">
+        <section id="Intro">
           <h2 class="text-2xl font-bold mb-3">Intro</h2>
           <p>
             HTML (Hypertext Markup Language) is used to specify whether your web
@@ -159,7 +160,7 @@
           </ul>
         </section>
 
-        <!-- Head VS Body -->
+        <!-- Head vs Body -->
         <section id="Head_VS_Body">
           <h2 class="text-2xl font-bold mb-3">Head VS Body</h2>
           <p>
@@ -211,6 +212,7 @@
           </p>
           <pre><code class="language-html">&lt;a href="insert link here" target="_blank"&gt;Link&lt;/a&gt;</code></pre>
         </section>
+
         <!-- Media -->
         <section id="Media">
           <h2 class="text-2xl font-bold mb-3">Media</h2>
@@ -281,6 +283,7 @@
         </button>
       </main>
     </div>
+
     <!-- Scripts -->
     <script>
       const sections = document.querySelectorAll("main section");
